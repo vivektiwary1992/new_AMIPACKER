@@ -22,7 +22,7 @@
     "provisioners": [
       {
         "type": "shell",
-        "script": "./build-drupal.sh drupal-9.2.2"
+        "script": "./Untitled-1.sh"
       }
     ]
   }
