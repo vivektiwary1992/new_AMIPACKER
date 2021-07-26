@@ -7,7 +7,7 @@ sudo tasksel install lamp-server
 
 sudo mysql -u root -padmin -e "CREATE DATABASE drupal CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
 sudo mysql -u root -padmin -e "GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES ON drupal.* TO ‘drupaluser’@’localhost’ IDENTIFIED BY 'root';"
-D9=drupal-9.2.2
+D9="drupal-9.2.2"
 wget https://ftp.drupal.org/files/projects/$D9.tar.gz
 tar -zxf $D9.tar.gz
 sudo mkdir /var/www/html/drupal
