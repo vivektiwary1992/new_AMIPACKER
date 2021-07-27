@@ -23,7 +23,7 @@
       {
         "type": "shell",
         
-        "script": "main.sh"
+        "script": "main.sh drupal"
       }
     ]
   }
