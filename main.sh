@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections
+sudo apt-get install -y -q
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install tasksel -y
@@ -15,7 +17,6 @@ D9="drupal-9.2.2"
 wget https://ftp.drupal.org/files/projects/$D9.tar.gz
 tar -zxf $D9.tar.gz
 sudo mkdir /var/www/html/drupal
-
 sudo cp -R $D9/* $D9/.htaccess /var/www/html/drupal
 sudo mkdir /var/www/html/drupal/sites/default/files
 sudo chown www-data:www-data /var/www/html/drupal/sites/default/files

@@ -22,7 +22,8 @@
     "provisioners": [
       {
         "type": "shell",
-        "script": "./Untitled-1.sh"
+        
+        "script": "main.sh"
       }
     ]
   }
